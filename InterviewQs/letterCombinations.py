@@ -26,6 +26,7 @@ class Solution(object):
         	new_combos = []
         	if i == 0:
         		old_combos = mapping[int(digit)]
+        		new_combos = old_combos
         	else:
         		for letter in mapping[int(digit)]:
         			new_combos += [combo+letter for combo in old_combos]
@@ -34,4 +35,4 @@ class Solution(object):
         	
         return new_combos
 
-print(Solution().letterCombinations('234'))
+print(Solution().letterCombinations('2'))
